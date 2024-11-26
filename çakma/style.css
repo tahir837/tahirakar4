@@ -1,0 +1,149 @@
+
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* * Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Global Css */
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #2e2e2e;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", serif;
+}
+/* Container */
+.container {
+  background-color: white;
+  width: 70vw;
+  max-height: 600px;
+  min-height: 60vw;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 0 20px #a02334;
+}
+
+.locations {
+  display: flex;
+  justify-content: space-between;
+}
+.locations button {
+  font-size: 16px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px 0;
+}
+.search form input {
+  border: none;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search button,
+.search span {
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.search button:hover {
+  scale: 1.2;
+}
+
+.city,
+.status {
+  text-align: center;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.city {
+  margin-top: 10px;
+}
+
+.status {
+  color: #29d4d4;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.info .icon,
+.degree {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.info .icon img {
+  width: 100px;
+}
+.info div p {
+  font-size: 13px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  gap: 10px;
+}
+.wrapper div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.wrapper div span:nth-of-type(1) {
+  font-size: 14px;
+}
+.wrapper div span:nth-of-type(2) {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    max-width: unset;
+    max-height: unset;
+    border-radius: 0;
+    padding: 100px 20px 50px 20px;
+  }
+  .wrapper {
+    gap: unset;
+  }
+}
